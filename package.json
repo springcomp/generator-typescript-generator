@@ -18,7 +18,7 @@
     "_template_files": "npm run _app_static_files && npm run _app_static_files_broken_copyfiles && npm run _app_template_files",
     "_app_template_files": "npx copyfiles -u 2 generators/app/templates/** ./dist/generators/app/",
     "_app_static_files": "npx copyfiles generators/**/*.ts ./dist/generators/app/templates/",
-    "_app_static_files_broken_copyfiles": "npx mkdirp ./dist/generators/app/templates/generators/app/templates && shx cp generators/Options.ts ./dist/generators/app/templates/generators/app/templates/ && shx cp generators/Options.ts ./dist/generators/app/templates/generators/"
+    "_app_static_files_broken_copyfiles": "npx mkdirp ./dist/generators/app/templates/generators/app/templates && shx cp generators/app/templates/generators/Options.ts ./dist/generators/app/templates/generators/app/templates/ && shx cp generators/app/templates/generators/Options.ts ./dist/generators/app/templates/generators/"
   },
   "dependencies": {
     "@springcomp/generator-ts": "^0.7.1",
