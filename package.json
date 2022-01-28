@@ -12,12 +12,7 @@
   "scripts": {
     "build": "npx tsc --project . --outDir ./dist/generators/",
     "clean": "shx rm -rf ./dist/",
-    "package": "npm run build && npm run _boilerplate_files && npm run _template_files && npm run _clear-package-json",
-    "_boilerplate_files": "shx cp LICENSE README.md ./dist/",
-    "_clear-package-json": "shx cp package.json ./dist/",
-    "_template_files": "npm run _app_static_files && npm run _app_template_files",
-    "_app_template_files": "npx copyfiles -u 2 generators/app/templates/**/**/* ./dist/generators/app/",
-    "_app_static_files": "npx copyfiles generators/**/**/*.ts ./dist/generators/app/templates/"
+    "package": "./install.sh"
   },
   "dependencies": {
     "@springcomp/generator-ts": "^0.7.1",
