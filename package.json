@@ -1,6 +1,6 @@
 {
   "name": "@springcomp/generator-typescript-generator",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "",
   "files": [
     "generators"
